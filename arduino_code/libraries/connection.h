@@ -14,7 +14,7 @@ class Connection{
     bool timeout(WiFiClient client,unsigned long maxTime);
   public:
     bool init_connection(WiFiClient client,unsigned long maxTime);
-    void get_command(WiFiClient client ,unsigned long maxTime ,unsigned short orderPin);
+    void get_command(WiFiClient client ,unsigned long maxTime);
 };
 
 #endif

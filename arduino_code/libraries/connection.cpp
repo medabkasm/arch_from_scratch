@@ -77,7 +77,7 @@ bool Connection::init_connection(WiFiClient client,unsigned long maxTime){
 
 }
 
-void Connection::get_command(WiFiClient client , unsigned long maxTime , unsigned short orderPin){
+void Connection::get_command(WiFiClient client , unsigned long maxTime){
 
   if(timeout(client,maxTime)){
     client.stop();

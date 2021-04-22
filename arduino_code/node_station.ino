@@ -35,7 +35,7 @@ void loop() {
     node = new Connection;
 
     if(node->init_connection(client,10000)){ // initialise connection between the client and the server (handshake)
-      node->get_command(client,10000,cmdPin); // execute the command (actuator) and close connection
+      node->get_command(client,10000); // execute the command (actuator) and close connection
       delete node;
     }
   }
